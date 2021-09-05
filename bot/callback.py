@@ -38,12 +38,12 @@ async def cbstart(_, query: CallbackQuery):
                              "🌐 Terms & Condition", callback_data="cbinfo")
                        ],[
                           InlineKeyboardButton(
-                             "💬 Group", url="https://t.me/VeezSupportGroup"),
+                             "💬 Group", url="https://t.me/asetnegaragaktuh"),
                           InlineKeyboardButton(
-                             "📣 Channel", url="https://t.me/levinachannel")
+                             "📣 Channel", url="https://t.me/storyfandi")
                        ],[
                           InlineKeyboardButton(
-                             "👩🏻‍💻 Developer", url="https://t.me/dlwrml")
+                             "☣️ owner", url="https://t.me/kemeemm")
                        ],[
                           InlineKeyboardButton(
                              "📚 All Command List", callback_data="cblist")

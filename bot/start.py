@@ -32,7 +32,7 @@ async def _human_time_duration(seconds):
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
 async def start(_, m: Message):
    if m.chat.type == "private":
-      await m.reply(f"✨ **Hello there, I am a telegram video streaming bot.**\n\n💭 **I was created to stream videos in group video chats easily.**\n\n❔ **To find out how to use me, please press the help button below** 👇🏻",
+      await m.reply(f"✨ **Hallo anak haram ngapain lu kesini ngentod.**\n\n💭 **Saya dibuat untuk nonton film movie bukan bokep ya mek.**\n\n❔ **oke intinya fandi ganteng, hayolo saya entod kamu hehe** 🖕",
                     reply_markup=InlineKeyboardMarkup(
                        [[
                           InlineKeyboardButton(

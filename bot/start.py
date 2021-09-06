@@ -36,35 +36,35 @@ async def start(_, m: Message):
                     reply_markup=InlineKeyboardMarkup(
                        [[
                           InlineKeyboardButton(
-                             "❔ HOW TO USE THIS BOT", callback_data="cbguide")
+                             "❔ CARA MENGGUNAKAN BOT KEREN INI", callback_data="cbguide")
                        ],[
                           InlineKeyboardButton(
-                             "🌐 Terms & Condition", callback_data="cbinfo")
+                             "🌐 FANDI GANTENG YA MEK", callback_data="cbinfo")
                        ],[
                           InlineKeyboardButton(
-                             "💬 Group", url="https://t.me/asetnegaragaktuh"),
+                             "💬 ASET NEGARA", url="https://t.me/asetnegaragaktuh"),
                           InlineKeyboardButton(
-                             "📣 Channel", url="https://t.me/storyfandi")
+                             "📣 STORY FANDI", url="https://t.me/storyfandi")
                        ],[
                           InlineKeyboardButton(
-                             "☣️ owner ganteng", url="https://t.me/dlwrml")
+                             "☣️ OWNER GANTENG", url="https://t.me/dlwrml")
                        ],[
                           InlineKeyboardButton(
-                             "📚 All Command List", callback_data="cblist")
+                             "📚 PENGGUNAAN BOT KEREN", callback_data="cblist")
                        ]]
                     ))
    else:
-      await m.reply("**✨ bot is online now ✨**",
+      await m.reply("**✨ BOT KEREN NYA IDUP WOW  ✨**",
                           reply_markup=InlineKeyboardMarkup(
                        [[
                           InlineKeyboardButton(
-                             "❔ HOW TO USE THIS BOT", callback_data="cbguide")
+                             "❔ CARA MENGGUNAKAN BOT KEREN", callback_data="cbguide")
                        ],[
                           InlineKeyboardButton(
-                             "🌐 Search Youtube", switch_inline_query='')
+                             "🌐 CARI DI YOUTUBE", switch_inline_query='')
                        ],[
                           InlineKeyboardButton(
-                             "📚 Command List", callback_data="cblist")
+                             "📚 CMD BOT NYA MEK", callback_data="cblist")
                        ]]
                     )
       )
@@ -76,17 +76,21 @@ async def alive(_, m: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await m.reply_text(
-        f"""✅ **bot is running**\n<b>💠 **uptime:**</b> `{uptime}`""",
+        f"""✅ **BOT NYA BISA YEAY**\n<b>💠 **HIDUP MEK:**</b> `{uptime}`""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "✨ Group", url=f"https://t.me/asetnegaragaktuh"
+                        "✨ ASET NEGARA", url=f"https://t.me/asetnegaragaktuh"
                     ),
                     InlineKeyboardButton(
-                        "📣 Channel", url=f"https://t.me/storyfandi"
+                        "📣 STORY FANDI", url=f"https://t.me/storyfandi"
+                    ),
+                    InlineKeyboardButton(
+                        "☣️ OWNER KECE", url=f"https://t.me/kemeemm"
                     )
                 ]
+
             ]
         )
     )
@@ -98,19 +102,19 @@ async def ping_pong(_, m: Message):
     m_reply = await m.reply_text("pinging...")
     delta_ping = time() - start
     await m_reply.edit_text(
-        "🏓 `PONG!!`\n"
+        "🐊 `peler!!`\n"
         f"⚡️ `{delta_ping * 1000:.3f} ms`"
     )
 
 
-@Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["uptime", f"fandi ganteng ya njing@{BOT_USERNAME}"]) & ~filters.edited)
 @sudo_users_only
 async def get_uptime(_, m: Message):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await m.reply_text(
-        "🤖 bot status:\n"
-        f"• **uptime:** `{uptime}`\n"
-        f"• **start time:** `{START_TIME_ISO}`"
+        "🤖 Bot keren:\n"
+        f"• **mekii:** `{uptime}`\n"
+        f"• **udah mulai ya mek:** `{START_TIME_ISO}`"
     )

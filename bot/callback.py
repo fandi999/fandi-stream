@@ -8,16 +8,16 @@ async def cbguide(_, query: CallbackQuery):
   await query.edit_message_text(
     f"""❓ HOW TO USE THIS BOT:
 
-1.) first, add me to your group.
-2.) then promote me as admin and give all permissions except anonymous admin.
-3.) add @{bn} to your group.
-4.) turn on the voice chat first before start to stream video.
-5.) type /vstream (reply to video) to start streaming.
-6.) type /vstop to end the video streaming.
+1.) Masukin bot keren ini ke gc hina lo!.
+2.) Jadiin admin bot keren ini ya mek.
+3.) Masukin @{bn} ke gc lo yg hina.
+4.) Hidupin vcg biar bot nya bisa war ya mek.
+5.) Ketik /vstream (reply to video) kontol lo.
+6.) Ketik /vstop buat sudahi war di vcg.
 
-📝 **note: stream & stop command can only be executed by group admin only!**
+📝 **Warning:fandi ganteng ya mek !**
 
-⚡ __Maintained by Veez Project Team__""",
+⚡ __bot fandi keren ya mek__""",
     reply_markup=InlineKeyboardMarkup(
       [[
         InlineKeyboardButton(
@@ -28,25 +28,25 @@ async def cbguide(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-  await query.edit_message_text(f"✨ **Hello there, I am a telegram video streaming bot.**\n\n💭 **I was created to stream videos in group video chats easily.**\n\n❔ **To find out how to use me, please press the help button below** 👇🏻",
+  await query.edit_message_text(f"✨ **Hello meki , saya bot movie fandi .**\n\n💭 **gua di buat untuk nonton film tapi bukan bokep ya mek.**\n\n❔ **To find out how to use me, fandi ganteng bgt ya**🖕",
                                 reply_markup=InlineKeyboardMarkup(
                        [[
                           InlineKeyboardButton(
-                             "❔ HOW TO USE THIS BOT", callback_data="cbguide")
+                             "❔ FANDI GANTENG ", callback_data="cbguide")
                        ],[
                           InlineKeyboardButton(
-                             "🌐 Terms & Condition", callback_data="cbinfo")
+                             "🌐 PADA INTINYA FANDI FANTENG", callback_data="cbinfo")
                        ],[
                           InlineKeyboardButton(
-                             "💬 Group", url="https://t.me/asetnegaragaktuh"),
+                             "💬 ASET NEGARA", url="https://t.me/asetnegaragaktuh"),
                           InlineKeyboardButton(
-                             "📣 Channel", url="https://t.me/storyfandi")
+                             "📣 STORY FANDI", url="https://t.me/storyfandi")
                        ],[
                           InlineKeyboardButton(
-                             "☣️ owner", url="https://t.me/kemeemm")
+                             "☣️ OWNER KECE", url="https://t.me/kemeemm")
                        ],[
                           InlineKeyboardButton(
-                             "📚 All Command List", callback_data="cblist")
+                             "📚 SEMUA PERINTAH", callback_data="cblist")
                        ]]
                     ))
 
@@ -54,13 +54,13 @@ async def cbstart(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbinfo"))
 async def cbinfo(_, query: CallbackQuery):
   await query.edit_message_text(
-    f"""🌐 **bot information !**
+    f"""🌐 **BOT INFORMASI !**
 
-🤖 __This bot was created to stream video in telegram group video chats using several methods from WebRTC.__
+🤖 __INI BOT STREAMING FILM YA MEK TAPI KALO MAU STREAMING BOKEP JELAS GABISA NTAR SAYA DOSA NJING.__
 
-💡 __Powered by PyTgcalls the Async client API for the Telegram Group Calls, and Pyrogram the telegram MTProto API Client Library and Framework in Pure Python for Users and Bots.__
+💡 __FANDI GANTENG GEES.__
 
-👨🏻‍💻 __Thanks to the developers who participated in the development of this bot, the list of devs can be seen below:__
+👨🏻‍💻 __TERIMA KASIH BUAT MANTAN ANJING YANG NINGGALIN PAS LAGI SAYANG SAYANGNYA:__
 
 👩🏻‍✈️ » [Levina Shavila](https://github.com/levina-lab)
 🤵🏻 » [Sammy-XD](https://github.com/Sammy-XD)
